@@ -1,10 +1,13 @@
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar/Navbar";
+import { Grid } from "@mui/material";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Grid container={true}>
       <Navbar />
-    </div>
+      <Outlet />
+    </Grid>
   );
 }
 
