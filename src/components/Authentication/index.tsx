@@ -1,5 +1,7 @@
-import { Grid } from "@mui/material"
+import { Grid, Tooltip } from "@mui/material"
 import CommonButton from "../CommonButton"
+import Badge from '@mui/material/Badge';
+import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 
 export function Authentication() {
     const buttonStyles = {
@@ -26,6 +28,11 @@ export function Authentication() {
                 variant='contained'>
                 Button with default global style
             </CommonButton>
+            <Tooltip title="This is cool notification icon">
+                <Badge badgeContent={4} color="primary">
+                    <CircleNotificationsIcon color="action" />
+                </Badge>
+            </Tooltip>
         </Grid>
     )
 }

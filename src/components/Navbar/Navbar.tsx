@@ -10,6 +10,7 @@ import { mainNavbarItems } from './navbarItems';
 import { styles } from './styles';
 import { useNavigate } from 'react-router';
 import { Grid } from '@mui/material';
+import Badge from '@mui/material/Badge';
 
 export default function Navbar() {
   const navigate = useNavigate()
